@@ -4,20 +4,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## ENV Setup
 
-create .env file in weatherApp folder and add below keys and also attaching .env in mail.
+Create .env file in weatherApp folder and add below keys and also attaching .env file in mail to start.
 
 `REACT_APP_API_URL = '<<API URL>>'` \
 `REACT_APP_API_KEY = '<<API KEY>>'`
 
-Ex: 
+Ex: \
 REACT_APP_API_URL = 'https://api.openweathermap.org/data/2.5' \
 REACT_APP_API_KEY = '858f15fed9292cbe25c341a754c55e45'
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run: \
 do install
 ### `npm install`
-do start
+To start
 ### `npm start`
 
 Runs the app in the development mode.\
