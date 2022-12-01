@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## ENV Setup
 
-Create .env file in weatherApp folder and add below keys and also attaching .env file in mail to start.
+Create .env file in weatherApp folder and add below keys and also attaching .env file in mail for your reference.
 
 `REACT_APP_API_URL = '<<API URL>>'` \
 `REACT_APP_API_KEY = '<<API KEY>>'`
@@ -18,7 +18,7 @@ In the project directory, you can run: \
 do install
 ### `npm install`
 To start
-### `npm run start`
+### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -26,7 +26,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+## Test the Page
+
+Please type Any City Ex: `Hyderabad` and press "Enter" Key or Click on Enter button then you can respective city weather info.
+
+### `npm run test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
