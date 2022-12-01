@@ -9,6 +9,7 @@ function App() {
   const [weather, setWeather] = useState(null);
   const [units, setUnits] = useState("metric");
   const [bg, setBg] = useState(hotBg);
+  const [name, setName] = useState('');
 
   useEffect(() => {
     const fetchWeatherData = async () => {
@@ -42,7 +43,7 @@ function App() {
 
   return (
     <div className="app" style={{ backgroundImage: `url(${bg})` }}>
-      <div className="overlay">
+      {process.env.REACT_APP_API_KEY ? (<div className="overlay">
         {weather && (
           <div className="container">
             <div className="section section__inputs">
@@ -51,7 +52,9 @@ function App() {
                 type="text"
                 name="city"
                 placeholder="Enter City..."
+                onChange={(e)=> setName(e.currentTarget.value)}
               />
+              <button onClick={(e) => setCity(name)}>Enter</button>
               <button onClick={(e) => handleUnitsClick(e)}>°F</button>
             </div>
 
@@ -62,9 +65,8 @@ function App() {
                 <h3>{weather.description}</h3>
               </div>
               <div className="temperature">
-                <h1>{`${weather.temp.toFixed()} °${
-                  units === "metric" ? "C" : "F"
-                }`}</h1>
+                <h1>{`${weather.temp.toFixed()} °${units === "metric" ? "C" : "F"
+                  }`}</h1>
               </div>
             </div>
 
@@ -72,7 +74,7 @@ function App() {
             <Descriptions weather={weather} units={units} />
           </div>
         )}
-      </div>
+      </div>) : (<h2 style={{textAlign: 'center'}}><br/>Please Create .env file and add REACT_APP_API_KEY && REACT_APP_API_URL <br/>in root folder as mentioned in README.md file and restart the server </h2>)}
     </div>
   );
 }
