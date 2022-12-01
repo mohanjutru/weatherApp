@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## ENV Setup
 
+Clone git repo https://github.com/mohanjutru/weatherApp.git
+
 Create .env file in weatherApp folder and add below keys and also attaching .env file in mail for your reference.
 
 `REACT_APP_API_URL = '<<API URL>>'` \
@@ -11,7 +13,7 @@ Create .env file in weatherApp folder and add below keys and also attaching .env
 
 Ex: \
 REACT_APP_API_URL = 'https://api.openweathermap.org/data/2.5' \
-REACT_APP_API_KEY = '858f15fed9292cbe25c341a754c55e45'
+REACT_APP_API_KEY = '<<858f15fed9292cbe25>>'
 ## Available Scripts
 
 In the project directory, you can run: \
@@ -28,7 +30,7 @@ You may also see any lint errors in the console.
 
 ## Test the Page
 
-Please type Any City Ex: `Hyderabad` and press "Enter" Key or Click on Enter button then you can respective city weather info.
+Please type Any City Ex: `Hyderabad` and press "Enter" Key or Click on Enter button then you can see respective city weather info.
 
 ### `npm run test`
 
